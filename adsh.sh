@@ -946,14 +946,13 @@ echo "Direitos autorais (c) 2022, AP SILVA NEGOCIOS DIGITAIS - EIRELI "
 echo "Todos os direitos reservados."
 echo ""
 echo ""
+echo -e "VOCE ACEITA OS TERMOS ? s/n "
+read resposta
 
-		echo -e "VOCE ACEITA OS TERMOS ? s/n "
-		read resposta
-
-		if [ $resposta = "s" ];
-		then
-		clear
-		obterinfo		
-		else
-		exit
-		fi
+if [ $resposta = "s" ];
+then
+clear
+obterinfo		
+else
+exit
+fi
